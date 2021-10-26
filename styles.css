@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.form,
+.thankYouPage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: white;
+  max-width: 600px;
+  max-height: 600px;
+  min-width: 280px;
+  min-height: 600px;
+  background-color: #80b0b4;
+}
+
+.form-header,
+.thankYouPage_header {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-header,
+.form-body,
+.thankYouPage_header,
+.thankYouPage_body {
+  text-transform: uppercase;
+  color: #3a3a3a;
+  font-family: Open Sans;
+}
+
+.form-body,
+.thankYouPage_body {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+a {
+  color: #185b61;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+input[type="email"] {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #185b61;
+  background: none;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #185b61;
+  background: none;
+}
+
+::placeholder {
+  color: #185b61;
+  font-size: 18.72px;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button__btn {
+  height: 50px;
+  width: 140px;
+  background-color: #185b61;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: Open Sans;
+}
+
+.form-checkbox__loremIpsum {
+  font-family: Open Sans;
+  font-size: 10px;
+}
+
+#errorEmail,
+#errorName,
+#errorCheckbox {
+  color: #ff0000;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #185b61;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #185b61;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.button__text {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  input[type="text"] {
+    width: 100px;
+  }
+
+  input[type="email"] {
+    width: 100px;
+  }
+}

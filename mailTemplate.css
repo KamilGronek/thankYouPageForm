@@ -1,0 +1,64 @@
+body {
+  background-color: #cccccc;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+.main {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-spacing: 0;
+  font-family: sans-serif;
+}
+
+.thankYouTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.lorem {
+  padding: 10px 20px 40px 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.icons__icon {
+  text-align: center;
+}
+
+.icons__icon img {
+  height: 30px;
+  width: 30px;
+}
+
+.icons__icon p {
+  font-size: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.loremIpsum {
+  font-family: Open Sans;
+  font-size: 10px;
+  padding: 40px 10px 10px 10px;
+}

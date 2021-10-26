@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+            emailjs.init("user_479k2hLdysYd0oi4ijZKw");
+        })();
+        </script>
+</head>
+<body>
+    <form class="form" id="form" action="/thankYouPage.html" method="GET">
+        <h1 class="form-header">
+                 Witaj!
+        </h1>
+        <div class="form-body"> 
+            <h3> 
+            Wypełnij formularz i zgarnij 
+            <a>kupon rabatowy </a>do wykorzystania
+            przy bliższych zakupach
+            </h3>
+        </div>
+        <div class="form-input">
+            <div class="form-input__email">
+                <input id="email" name="email" type="email" placeholder="EMAIL">
+                <div id="errorEmail"></div>
+            </div>
+            <div class="form-input__name">
+                <input type="text" id="name" name="name"  type ="text" placeholder="IMIĘ">
+                <div id="errorName"></div>
+            </div>
+        </div>
+        <div class="form-checkbox">
+                    <div class="form-group">
+                        <input type="checkbox" id="html">
+                        <label for="html"></label>
+                    </div>
+                <div id="errorCheckbox"></div>
+            <div class="form-checkbox__loremIpsum">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Possimus officia, eligendi blanditiis officiis earum expedita quo, 
+                 minus quae voluptas sunt laboriosam odio aperiam minima 
+                 quas exercitationem necessitatibus, inventore sed optio?
+            </div>
+        </div>
+         <div class="form-button">
+            <button id="button" class="form-button__btn"  type="submit">
+                <div class="button__text">wyślij</div>
+            </button>
+         </div>
+        </form>
+</body>
+</html>
