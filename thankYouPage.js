@@ -1,6 +1,6 @@
 
 
-const thankYoupageHeader = document.getElementById('thankYouPage_header');
+const thankYoupageHeader = document.getElementById('thankYouPage__header');
 const createTagU = document.createElement("u");
 const createTagA = document.createElement("a");
 const createExclamaionMark = document.createTextNode(' !');

@@ -20,7 +20,7 @@
 }
 
 .form-header,
-.thankYouPage_header {
+.thankYouPage__header {
   padding: 0px 15px;
   display: flex;
   justify-content: center;
@@ -29,15 +29,15 @@
 
 .form-header,
 .form-body,
-.thankYouPage_header,
-.thankYouPage_body {
+.thankYouPage__header,
+.thankYouPage__body {
   text-transform: uppercase;
   color: #3a3a3a;
   font-family: Open Sans;
 }
 
 .form-body,
-.thankYouPage_body {
+.thankYouPage__body {
   display: flex;
   justify-content: center;
   margin: 30px;
